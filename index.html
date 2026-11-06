@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สมชาย ใจดี – Front-end Developer</title>
+  <meta name="description" content="Profile of สมชาย ใจดี (Somchai Jaidee), a front-end developer in Bangkok building fast, accessible web interfaces.">
+  <meta name="theme-color" content="#F3F6FB" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09142A" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="สมชาย ใจดี – Front-end Developer">
+  <meta property="og:description" content="Fast, accessible web interfaces. Based in Bangkok.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Noto+Serif+Thai:wght@600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Share+Tech+Mono&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <header class="top">
+    <div class="wrap top__inner">
+      <a class="top__name" href="#" lang="th">สมชาย ใจดี</a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero: the profile card. MRZ lines are generated from the data-* attributes by js/main.js -->
+    <section class="wrap hero" aria-label="Profile">
+      <article class="card"
+               data-surname="JAIDEE"
+               data-given="SOMCHAI"
+               data-country="THA"
+               data-number="SOMDEV01"
+               data-since="180301"
+               data-updated="261106">
+        <div class="card__bar">
+          <span>Developer profile</span>
+          <span>Bangkok, Thailand</span>
+        </div>
+
+        <div class="card__body">
+          <!-- Swap the monogram for your photo: <img src="assets/photo.jpg" alt="Portrait of Somchai Jaidee"> -->
+          <div class="photo" role="img" aria-label="Monogram SJ">
+            <span>SJ</span>
+          </div>
+
+          <div class="card__main">
+            <h1 class="card__title" lang="th">สมชาย ใจดี</h1>
+            <p class="card__role">Front-end developer who builds fast, accessible interfaces.</p>
+
+            <dl class="fields">
+              <div><dt>Surname</dt><dd lang="th">ใจดี</dd></div>
+              <div><dt>Given name</dt><dd lang="th">สมชาย</dd></div>
+              <div><dt>Coding since</dt><dd>2018</dd></div>
+              <div><dt>Works with</dt><dd>TypeScript, React, CSS</dd></div>
+              <div><dt>Languages</dt><dd>ไทย, English</dd></div>
+              <div><dt>Updated</dt><dd>Nov 2026</dd></div>
+            </dl>
+          </div>
+
+          <p class="stamp" aria-hidden="true">Open to<br>work</p>
+        </div>
+
+        <div class="mrz" aria-hidden="true">
+          <div class="mrz__line"></div>
+          <div class="mrz__line"></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrap section" id="about">
+      <h2>About</h2>
+      <div class="section__body prose">
+        <p>I’m a front-end developer who likes the unglamorous parts of the web: semantic markup, sensible CSS, and pages that load before you notice them. I’ve spent the last few years building product interfaces for small teams, where one person often owns design, code and the bug report.</p>
+        <p>Away from the keyboard I cook too much, cycle the canals of Thonburi, and keep a notebook of interface details I’d like to steal.</p>
+      </div>
+    </section>
+
+    <section class="wrap section" id="work">
+      <h2>Selected work</h2>
+      <ul class="section__body rows">
+        <li class="row">
+          <span class="row__when">2026</span>
+          <div class="row__main">
+            <h3>Tide – transit timetable</h3>
+            <p>An offline-first timetable app for Bangkok river boats. Works without signal and installs from the browser.</p>
+            <p class="row__tags">TypeScript, Service Workers, Vite</p>
+          </div>
+          <a class="row__link" href="https://github.com/" rel="noopener">Source<span class="sr"> for Tide</span></a>
+        </li>
+        <li class="row">
+          <span class="row__when">2025</span>
+          <div class="row__main">
+            <h3>Plain Ledger – budgeting</h3>
+            <p>A keyboard-first budgeting tool. Entering a month of expenses takes about two minutes.</p>
+            <p class="row__tags">React, IndexedDB, Playwright</p>
+          </div>
+          <a class="row__link" href="https://github.com/" rel="noopener">Live demo<span class="sr"> of Plain Ledger</span></a>
+        </li>
+        <li class="row">
+          <span class="row__when">2024</span>
+          <div class="row__main">
+            <h3>Kerning Club – type specimens</h3>
+            <p>An open-source site that renders any Google Font in Thai and Latin side by side, for checking mixed-script pairings.</p>
+            <p class="row__tags">HTML, CSS, vanilla JS</p>
+          </div>
+          <a class="row__link" href="https://github.com/" rel="noopener">Source<span class="sr"> for Kerning Club</span></a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="wrap section" id="experience">
+      <h2>Experience</h2>
+      <ol class="section__body timeline">
+        <li>
+          <p class="timeline__when">2023 – now</p>
+          <h3>Front-end developer, Lanna Labs</h3>
+          <p>Lead the web client for a logistics dashboard used by 40 warehouses. Cut first load from 6 s to 1.8 s and brought the app to WCAG 2.2 AA.</p>
+        </li>
+        <li>
+          <p class="timeline__when">2020 – 2023</p>
+          <h3>Web developer, Studio Mango</h3>
+          <p>Built marketing sites and small e-commerce stores for local brands, from first sketch to launch.</p>
+        </li>
+        <li>
+          <p class="timeline__when">2018 – 2020</p>
+          <h3>Junior developer, freelance</h3>
+          <p>Started with WordPress themes, moved to hand-written HTML and CSS once clients asked why pages were slow.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="wrap section" id="toolkit">
+      <h2>Toolkit</h2>
+      <div class="section__body toolkit">
+        <div>
+          <h3>Daily</h3>
+          <p>TypeScript, React, Next.js, CSS (grid, container queries), Vite</p>
+        </div>
+        <div>
+          <h3>Quality</h3>
+          <p>Playwright, Vitest, axe, Lighthouse, screen-reader testing</p>
+        </div>
+        <div>
+          <h3>Learning</h3>
+          <p>Rust for tooling, WebGPU, better illustration skills</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="contact">
+      <h2>Contact</h2>
+      <div class="section__body">
+        <p class="contact__lead">Have a project or a role in mind? Email is the quickest way to reach me.</p>
+        <p class="contact__mail">
+          <a href="mailto:hello@example.com">hello@example.com</a>
+          <button type="button" class="copy" data-copy="hello@example.com">Copy email</button>
+          <span class="copy__status" role="status" aria-live="polite"></span>
+        </p>
+        <ul class="links">
+          <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://codepen.io/" rel="noopener">CodePen</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>© <span id="year">2026</span> สมชาย ใจดี. Built with plain HTML, CSS and JavaScript.</p>
+  </footer>
+</body>
+</html>
